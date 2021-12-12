@@ -1,8 +1,7 @@
 // Write your code here!
-const body = document.getElementsByTagName("body")[0];
-body.removeChild(body.querySelector("main"));
+main.remove(); //removes main from DOM
+const newHeader = document.createElement("h1")//Creates newHeader, h1 element
 
-const newHeader = document.createElement("h1");
-newHeader.id = "victory";
-
-newHeader.innerHTML = "Shane is the champion";
+newHeader.id = 'victory'//gives newHeader id of 'victory'
+newHeader.innerHTML = "Shane is the champion"
+document.body.append(newHeader)//appends newHeader to DOM
